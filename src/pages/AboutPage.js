@@ -15,6 +15,7 @@ const AboutPage = () => {
     <React.Fragment>
       <Helmet>
           <meta charSet="utf-8" />
+          <link rel="icon" href="https://res.cloudinary.com/dpi44zxlw/image/upload/v1655481712/logo_cu3hyc.png"></link>
           <title>Tec | About</title>
       </Helmet>
       <Navbar />

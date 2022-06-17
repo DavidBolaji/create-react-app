@@ -4,12 +4,11 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   AiFillProfile,
   AiOutlineCloudUpload,
-  AiOutlineInbox,
   AiOutlineLogout,
 } from "react-icons/ai";
 import { FiTrash } from "react-icons/fi";
 import { useHistory } from "react-router-dom";
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+
 import { User } from "../../../utils/apiLists";
 let authToken = localStorage.getItem("jwt");
 authToken = JSON.parse(authToken);
@@ -304,7 +303,6 @@ const AdminDropdown = ({ user }) => {
               maxLength={200}
             />
           </Form.Item>
-
           <div
             style={{
               width: screen < 500 ? "99%" : "66%",
