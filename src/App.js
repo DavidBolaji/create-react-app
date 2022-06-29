@@ -14,29 +14,28 @@ import Blog from "./pages/Blog";
 import BlogSingle from "./pages/BlogSingle";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import 'antd/dist/antd.css';
+import "antd/dist/antd.min.css";
 import "./styles.css";
-import 'aos/dist/aos.css'
-import AOS from 'aos';
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export default function App() {
   const location = useLocation();
-  
+
   useEffect(() => {
     AOS.init({});
-  },[])
+  }, []);
 
   useLayoutEffect(() => {
-   window.scrollTo(0,0)
-  },[location.pathname])
-
-
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div>
       <Switch>
-        <Route path="/" exact><Redirect to="/home" /> </Route>
+        <Route path="/" exact>
+          <Redirect to="/home" />{" "}
+        </Route>
         <Route path="/home">
           <Homepage />
         </Route>
@@ -94,5 +93,5 @@ export default function App() {
         </Route>
       </Switch>
     </div>
-  )
+  );
 }

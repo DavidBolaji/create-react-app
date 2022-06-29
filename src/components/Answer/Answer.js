@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import BorderImage from "../BorderImage/BorderImage";
 import Button from "../Button/Button";
 import "./Answer.css";
-// import facebook from "../../assets/img/home.webp";
-import facebook from "../../assets/img/facebook-logo.png";
+// import facebook from "../../assets/img/home.jpg";
+import sch2 from "../../assets/img/sch41.jpg";
+import sch3 from "../../assets/img/school.jpg";
+import sch from "../../assets/img/sch.jpg";
+import sch5 from "../../assets/img/sch4.jpg";
+import { Link } from "react-router-dom";
 
 // import Aos from "aos";
 // import "aos/dist/aos.css";
@@ -11,23 +15,23 @@ import facebook from "../../assets/img/facebook-logo.png";
 const dataImages = [
   {
     id: "01",
-    imageUrl: facebook,
-    alt: "facebook",
+    imageUrl: sch,
+    alt: "school",
   },
   {
     id: "02",
-    imageUrl: facebook,
-    alt: "facebook",
+    imageUrl: sch3,
+    alt: "school",
   },
   {
     id: "03",
-    imageUrl: facebook,
-    alt: "facebook",
+    imageUrl: sch2,
+    alt: "school",
   },
   {
     id: "04",
-    imageUrl: facebook,
-    alt: "facebook",
+    imageUrl: sch5,
+    alt: "school",
   },
 ];
 
@@ -52,11 +56,9 @@ const Answer = () => {
   // },[])
 
   const [hoverColor, setHoverColor] = useState("#00529b");
-  const handleHover = (hoverCol) => {
-    setHoverColor(hoverColor);
-  };
+
   return (
-    <div className="answer" data-aos="slide-up" data-aos-duration="2500">
+    <div className="answer" data-aos="fade-in" data-aos-duration="2500">
       <div className="answer_image">
         {dataImages.map((image) => {
           return (
@@ -78,13 +80,15 @@ const Answer = () => {
           needed for jobs and careers from year one upward is the best way you
           can have your pupils and students ready for their generation needs!
         </p>
-        <Button
-          title={"let's get started"}
-          styles={{ ...styles, backgroundColor: hoverColor }}
-          arrow={true}
-          onMouseEnter={() => setHoverColor("#033462")}
-          onMouseLeave={() => setHoverColor("#00529b")}
-        />
+        <Link to="/about">
+          <Button
+            title={"let's get started"}
+            styles={{ ...styles, backgroundColor: hoverColor }}
+            arrow={true}
+            onMouseEnter={() => setHoverColor("#033462")}
+            onMouseLeave={() => setHoverColor("#00529b")}
+          />
+        </Link>
       </div>
     </div>
   );

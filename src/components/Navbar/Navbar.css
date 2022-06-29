@@ -1,10 +1,11 @@
 .navbar {
   height: 30px;
   width: 100vw;
-  background-color: blue;
+  background-color: #fff;
   padding: 0px;
   margin: 0px;
   position: fixed;
+
   top: 0;
   left: 0;
   z-index: 10;
@@ -45,7 +46,6 @@
   cursor: pointer;
 }
 
-
 .navbar__slider {
   background-color: #323281;
   width: 60vw;
@@ -60,7 +60,6 @@
   visibility: hidden;
   /* filter: blur(1px); */
 }
-
 
 .navbar__slider.active {
   transform: translateX(0vw);
@@ -102,15 +101,13 @@
 
 .links a:hover {
   color: red;
-} 
+}
 
 .dropdown {
   display: flex;
   align-items: center;
   position: relative;
 }
-
-
 
 .dropdown__group {
   position: absolute;
@@ -135,14 +132,12 @@
 /* @media only screen and (min-width: 450px) {
     
 } */
-  
-  
+
 /* @media only screen and (min-width: 810px) {
  
 
 } */
-  
-  
+
 @media only screen and (min-width: 990px) {
   .navbar {
     display: none;
@@ -160,7 +155,6 @@
     /* opacity: 0; */
     width: 100%;
     z-index: 10;
-    
   }
 
   .desktop__nav.active {
@@ -172,14 +166,13 @@
     display: flex;
   }
 
-  .desktop__links .main:hover{
+  .desktop__links .main:hover {
     background-color: #033462;
   }
 
   .desktop__links .main a {
     color: #fff;
   }
-
 
   .desktop__links .main {
     height: 10vh;
@@ -196,7 +189,7 @@
   }
 
   .desktop__links.active div a {
-    color: #fff!important;
+    color: #fff !important;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -218,7 +211,6 @@
   }
 
   .dropdown__group div {
-   
     white-space: nowrap;
     /* background-color: #323281; */
     width: 100%;

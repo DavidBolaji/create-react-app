@@ -8,7 +8,7 @@
   --ash-clr: #8a5d24;
   --grey-txt: #999999;
   --white-clr: #ffffff;
-  --default-font: 'Oswald', sans-serif;
+  --default-font: "Oswald", sans-serif;
   --paragraph: 0.9333rem;
 }
 
@@ -49,7 +49,7 @@
   width: 100vw;
   height: 100%;
   object-fit: cover;
-  filter: invert(0.24);
+  filter: invert(0.19);
 }
 
 .hero .hero_text {
@@ -145,10 +145,9 @@
   background-color: blue;
 }
 
-
 @media only screen and (min-width: 550px) {
   .hero .hero_text {
-    top: 15%; 
+    top: 15%;
   }
 
   .hero .hero_text .text_group h2 {
@@ -162,14 +161,12 @@
 
   .hero .hero_text .hero_btn {
     top: 355px;
-    
   }
 }
 
-
 @media only screen and (min-width: 810px) {
   .hero .hero_text {
-    top: 15%; 
+    top: 15%;
   }
 
   .hero .hero_text .text_group h2 {
@@ -185,7 +182,6 @@
 
   .hero .hero_text .hero_btn {
     top: 365px;
-    
   }
 
   .hero .hero_controls {
@@ -195,10 +191,9 @@
   }
 }
 
-
 @media only screen and (min-width: 990px) {
   .hero .hero_text {
-    top: 15%; 
+    top: 15%;
   }
 
   .hero .hero_text .text_group h2 {
@@ -216,7 +211,6 @@
 
   .hero .hero_text .hero_btn {
     top: 335px;
-    
   }
 
   .hero .hero_controls {
