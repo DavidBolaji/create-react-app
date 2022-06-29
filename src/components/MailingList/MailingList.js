@@ -50,17 +50,17 @@ const MailingList = () => {
         <img src={Logo} alt="child-pic" />
       </div>
       <div className="mailing_list_text">
-        <h3 data-aos="slide-left" data-aos-duration="1000">
+        <h3 data-aos="fade-in" data-aos-duration="1000">
           Looking For Free Resources? Join Our Mailing List
         </h3>
-        <p data-aos="slide-left" data-aos-duration="1500">
+        <p data-aos="fade-in" data-aos-duration="1500">
           Subscribe Today to Receive Our Newsletter. You can unsubscribe at any
           time.
         </p>
 
         <div
           className="mailing_list_btn"
-          data-aos="slide-left"
+          data-aos="fade-in"
           data-aos-duration="1000"
         >
           <Search
