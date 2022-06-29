@@ -5,11 +5,11 @@ import "./TecInEveryS.css";
 const TecInEveryS = () => {
   return (
     <div className="tec__in__every__s">
-      <Divider plain data-aos="zoom-in" data-aos-duration="2000">
+      <Divider plain data-aos="zoom-in" data-aos-duration="500">
         <h2 className="a_head">Tec-In-Every-school</h2>
       </Divider>
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         "Schools are the greatest institutions to shape tomorrow leaders and
         future, everyone is needed to create the needed innovative, self
         discovery, self empowerment and triumphant community, your school gives
@@ -21,7 +21,7 @@ const TecInEveryS = () => {
 
       <Divider />
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         Your school k12, has a unique vision and mission, and we’re here to
         partner with you in achieving your dreams and visions, ensuring good
         success in academic and life.
@@ -29,7 +29,7 @@ const TecInEveryS = () => {
 
       <Divider />
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         At TEC, and with TEC IN EVERY SCHOOL innovation, our mission is to
         transform your vision and meet every student/pupil specific need,
         creating pathways to good success
@@ -37,7 +37,7 @@ const TecInEveryS = () => {
 
       <Divider />
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         We do this not only by embracing the future of education, which will
         increasingly draw on virtual learning technologies, but also by
         equipping our teachers (instructors) with the techniques they need to
@@ -46,7 +46,7 @@ const TecInEveryS = () => {
 
       <Divider />
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         Because we know that teachers who keep learning help build a community
         of lifelong learners, we provide our staff the tools they need to hone
         their skills through our monthly conference. Our teachers look for
@@ -57,7 +57,7 @@ const TecInEveryS = () => {
 
       <Divider />
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         We celebrate you for setting up one of best institute the earth will
         ever have, nurturing and building every child, building tomorrow’s
         world, we’re happy and grateful, to be part of your visions! Together,
@@ -67,7 +67,7 @@ const TecInEveryS = () => {
 
       <Divider />
 
-      <p className="a_para" data-aos="fade-in" data-aos-duration="1500">
+      <p className="a_para" data-aos="fade-in" data-aos-duration="500">
         On behalf of the TEC IN EVERY SCHOOL team, consulting for schools in
         every state, we’re excited to work with your school. It’s time to watch
         all your visions grow, let’s start now!

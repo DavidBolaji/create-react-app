@@ -84,14 +84,13 @@ const RegisterP = () => {
     } else {
       message.error(`Something went wrong please try a different email`);
     }
-
   };
 
   return (
     <div
       className="register__page"
       data-aos="flip-left"
-      data-aos-duration="1500"
+      data-aos-duration="500"
     >
       <div className="register__page__form">
         <div className="register__page__left">
@@ -184,8 +183,7 @@ const RegisterP = () => {
               <div>
                 <Checkbox onChange={onChange} checked={check && true}>
                   <span>
-                    I agree to{" "}
-                    <Link to="/terms"> Terms of service</Link> and{" "}
+                    I agree to <Link to="/terms"> Terms of service</Link> and{" "}
                     <Link to="/privacy">Privacy Policy</Link>{" "}
                   </span>
                 </Checkbox>

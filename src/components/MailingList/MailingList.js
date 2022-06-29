@@ -53,7 +53,7 @@ const MailingList = () => {
         <h3 data-aos="fade-in" data-aos-duration="1000">
           Looking For Free Resources? Join Our Mailing List
         </h3>
-        <p data-aos="fade-in" data-aos-duration="1500">
+        <p data-aos="fade-in" data-aos-duration="500">
           Subscribe Today to Receive Our Newsletter. You can unsubscribe at any
           time.
         </p>

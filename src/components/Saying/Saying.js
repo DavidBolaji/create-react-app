@@ -4,7 +4,7 @@ import "./Saying.css";
 
 // data-aos="fade-up"
 // data-aos-easing="linear"
-// data-aos-duration="1500"
+// data-aos-duration="500"
 
 const Saying = () => {
   return (

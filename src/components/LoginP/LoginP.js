@@ -3,7 +3,7 @@ import { Input, Button, Checkbox, message } from "antd";
 import { RiLockPasswordLine } from "react-icons/ri";
 import EduLogo from "../../assets/img/pair_programming.svg";
 import { AiOutlineMail, AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { User } from "../../utils/apiLists";
 import "./LoginP.css";
 
@@ -11,7 +11,6 @@ const LoginP = () => {
   const emailRef = useRef();
   const passRef = useRef();
   const [loading, setLoading] = useState(false);
-
 
   const handleClick = async (e) => {
     setLoading(true);
@@ -49,7 +48,7 @@ const LoginP = () => {
     }
   };
   return (
-    <div className="login__page" data-aos="flip-left" data-aos-duration="1500">
+    <div className="login__page" data-aos="flip-left" data-aos-duration="500">
       <div className="login__page__form">
         <div className="login__page__left">
           <h2>Login</h2>

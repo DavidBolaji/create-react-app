@@ -129,18 +129,26 @@ const Contact = () => {
           message.error("Message not sent.All fields are required", 2.5)
         );
     } else {
-
-      emailjs.sendForm('service_vy45ojk', 'template_wbti2ie',  form.current, '0kDDdjI2hw-sG98Sf')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+      emailjs
+        .sendForm(
+          "service_vy45ojk",
+          "template_wbti2ie",
+          form.current,
+          "0kDDdjI2hw-sG98Sf"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
 
       message
-      .loading('Action in progress..', 2.5)
-      .then(() => message.success("sent", 2.5))
-      .then(() => message.success('message sent', 2.5))
+        .loading("Action in progress..", 2.5)
+        .then(() => message.success("sent", 2.5))
+        .then(() => message.success("message sent", 2.5));
     }
   };
   return (
@@ -150,7 +158,7 @@ const Contact = () => {
         <div
           className="contact__social__fb"
           data-aos="flip-right"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <FaFacebook
             style={{
@@ -162,7 +170,7 @@ const Contact = () => {
         <div
           className="contact__social__ws"
           data-aos="flip-right"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <BsWhatsapp
             style={{
@@ -174,7 +182,7 @@ const Contact = () => {
         <div
           className="contact__social__tg"
           data-aos="flip-right"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <FaTelegramPlane
             style={{
@@ -189,21 +197,21 @@ const Contact = () => {
         <div
           className="contact__meet__phone"
           data-aos="flip-left"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <MdSmartphone /> <span>+2347086513100</span>
         </div>
         <div
           className="contact__meet__mail"
           data-aos="flip-left"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <MdOutlineAlternateEmail /> <span>info@tecworld.com.ng</span>
         </div>
         <div
           className="contact__meet__address"
           data-aos="flip-left"
-          data-aos-duration="2000"
+          data-aos-duration="500"
         >
           <FaRegAddressBook /> <span> osogbo osun state </span>
         </div>

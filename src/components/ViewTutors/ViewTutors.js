@@ -67,56 +67,63 @@ const ViewTutors = () => {
   console.log(viewTutor);
   return (
     <div className="view_tutors">
-      <h2 data-aos="fade-in" data-aos-duration="1500">
+      <h2 data-aos="fade-in" data-aos-duration="500">
         View Tec Tutors
       </h2>
-      {viewTutors.length === 0 ? <Spin /> : <div className="view_tutors_portfolio">
-        {viewTutors.map((tutor) => {
-          return (
-            tutor.active && (
-              <Skeleton
-                key={tutor._id}
-                loading={loading}
-                active
-                paragraph={{ rows: 12 }}
-              >
-                <Card
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500"
-                  hoverable
-                  style={{ width: 400, margin: 10 }}
-                  cover={
-                    <img
-                      alt="example"
-                      src={tutor.img}
-                      style={
-                        {
-                          // width: '100%',
-                          // height: '100%',
-                          // objectFit: 'cover'
+      {viewTutors.length === 0 ? (
+        <Spin />
+      ) : (
+        <div className="view_tutors_portfolio">
+          {viewTutors.map((tutor) => {
+            return (
+              tutor.active && (
+                <Skeleton
+                  key={tutor._id}
+                  loading={loading}
+                  active
+                  paragraph={{ rows: 12 }}
+                >
+                  <Card
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    hoverable
+                    style={{ width: 400, margin: 10 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src={tutor.img}
+                        style={
+                          {
+                            // width: '100%',
+                            // height: '100%',
+                            // objectFit: 'cover'
+                          }
                         }
+                      />
+                    }
+                  >
+                    <Meta
+                      title={tutor.name}
+                      description={
+                        tutor.description == ""
+                          ? ""
+                          : truncate(`${tutor.description}`, 20)
                       }
                     />
-                  }
-                >
-                  <Meta
-                    title={tutor.name}
-                    description={
-                      tutor.description == ""
-                        ? ""
-                        : truncate(`${tutor.description}`, 20)
-                    }
-                  />
-                  <Button type="link" onClick={showModal.bind(null, tutor._id)}>
-                    More
-                  </Button>
-                </Card>
-              </Skeleton>
-            )
-          );
-        })}
-      </div>}
+                    <Button
+                      type="link"
+                      onClick={showModal.bind(null, tutor._id)}
+                    >
+                      More
+                    </Button>
+                  </Card>
+                </Skeleton>
+              )
+            );
+          })}
+        </div>
+      )}
       <Modal
         title={viewTutor[0]?.name}
         visible={isModalVisible}
