@@ -16,15 +16,15 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import "antd/dist/antd.min.css";
 import "./styles.css";
-import "aos/dist/aos.css";
-import AOS from "aos";
+// import "aos/dist/aos.css";
+// import AOS from "aos";
 
 export default function App() {
   const location = useLocation();
 
-  useEffect(() => {
-    AOS.init({});
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({});
+  // }, []);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);

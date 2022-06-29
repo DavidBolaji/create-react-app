@@ -67,9 +67,7 @@ const ViewTutors = () => {
   console.log(viewTutor);
   return (
     <div className="view_tutors">
-      <h2 data-aos="fade-in" data-aos-duration="500">
-        View Tec Tutors
-      </h2>
+      <h2>View Tec Tutors</h2>
       {viewTutors.length === 0 ? (
         <Spin />
       ) : (

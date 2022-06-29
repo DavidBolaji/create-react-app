@@ -59,9 +59,7 @@ const SubjectTutors = () => {
   };
   return (
     <div className="subject_tutors">
-      <h2 data-aos="fade-in" data-aos-duration="500">
-        Browse Tutors By Subject
-      </h2>
+      <h2>Browse Tutors By Subject</h2>
       <div className="group_container">
         <div className="group_one">
           <div
