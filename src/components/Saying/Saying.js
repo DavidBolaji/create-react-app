@@ -9,7 +9,7 @@ import "./Saying.css";
 const Saying = () => {
   return (
     <div className="saying">
-      <div className="saying_image" data-aos="fade-in" data-aos-duration="2500">
+      <div className="saying_image" data-aos="fade-in">
         <img src={Logo} alt="child-pic" />
       </div>
       <div className="saying_text">

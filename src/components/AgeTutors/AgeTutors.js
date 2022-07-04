@@ -60,21 +60,11 @@ const AgeTutors = () => {
       <h2>Browse Tutors By Age</h2>
       <div className="group_container">
         <div className="group_one">
-          <div
-            onClick={() => requestTutor("Preschool")}
-            className="left"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-          >
+          <div onClick={() => requestTutor("Preschool")} className="left">
             <img src={Logo} alt="logo" />
             <h3>Preschool</h3>
           </div>
-          <div
-            onClick={() => requestTutor("Elementary")}
-            className="right"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-          >
+          <div onClick={() => requestTutor("Elementary")} className="right">
             <img src={Logo} alt="logo" />
             <h3>Elementary</h3>
           </div>
@@ -84,16 +74,11 @@ const AgeTutors = () => {
           className="group_two"
           style={{ marginTop: "40px" }}
         >
-          <div className="left" data-aos="zoom-in" data-aos-duration="2500">
+          <div className="left">
             <img src={Logo} alt="logo" />
             <h3>High School</h3>
           </div>
-          <div
-            onClick={() => requestTutor("College")}
-            className="right"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-          >
+          <div onClick={() => requestTutor("College")} className="right">
             <img src={Logo} alt="logo" />
             <h3>College Prep</h3>
           </div>

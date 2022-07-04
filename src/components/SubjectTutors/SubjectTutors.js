@@ -62,41 +62,21 @@ const SubjectTutors = () => {
       <h2>Browse Tutors By Subject</h2>
       <div className="group_container">
         <div className="group_one">
-          <div
-            className="left"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-            onClick={() => requestTutor("Mathematics")}
-          >
+          <div className="left" onClick={() => requestTutor("Mathematics")}>
             <img src={Logo} alt="math tutor pic" />
             <h3>Math Tutoring</h3>
           </div>
-          <div
-            className="right"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-            onClick={() => requestTutor("English")}
-          >
+          <div className="right" onClick={() => requestTutor("English")}>
             <img src={Logo} alt="English tutor pic" />
             <h3>English Tutoring</h3>
           </div>
         </div>
         <div className="group_two" style={{ marginTop: "40px" }}>
-          <div
-            className="left"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-            onClick={() => requestTutor("junior_science")}
-          >
+          <div className="left" onClick={() => requestTutor("junior_science")}>
             <img src={Logo} alt="basic_stud pic" />
             <h3>Basic Science</h3>
           </div>
-          <div
-            className="right"
-            data-aos="zoom-in"
-            data-aos-duration="2500"
-            onClick={() => requestTutor("senior_science")}
-          >
+          <div className="right" onClick={() => requestTutor("senior_science")}>
             <img src={Logo} alt="senior_stud pic" />
             <h3>Senior Science</h3>
           </div>

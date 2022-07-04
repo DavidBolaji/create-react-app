@@ -154,7 +154,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact__social">
-        <h2 data-aos="zoom-in">Connect</h2>
+        <h2>Connect</h2>
         <div
           className="contact__social__fb"
           data-aos="flip-right"
@@ -193,7 +193,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact__meet">
-        <h2 data-aos="zoom-in">Meet us</h2>
+        <h2>Meet us</h2>
         <div
           className="contact__meet__phone"
           data-aos="flip-left"

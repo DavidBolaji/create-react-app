@@ -42,11 +42,7 @@ const MailingList = () => {
   };
   return (
     <div className="mailing_list">
-      <div
-        className="mailing_list_image"
-        data-aos="fade-in"
-        data-aos-duration="2500"
-      >
+      <div className="mailing_list_image" data-aos="fade-in">
         <img src={Logo} alt="child-pic" />
       </div>
       <div className="mailing_list_text">

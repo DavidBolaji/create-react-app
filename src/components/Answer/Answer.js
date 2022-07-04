@@ -58,7 +58,7 @@ const Answer = () => {
   const [hoverColor, setHoverColor] = useState("#00529b");
 
   return (
-    <div className="answer" data-aos="fade-in" data-aos-duration="2500">
+    <div className="answer" data-aos="fade-in">
       <div className="answer_image">
         {dataImages.map((image) => {
           return (
